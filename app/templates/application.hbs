@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div style="display:flex;min-height:40rem;width:100%">
+    {{!-- sidebar --}}
+    {{#if sidebar.open}}
+      <div style="min-height:40rem;height:100%;width:10rem;border:1px solid lightgrey">
+        {{sidebar-content}}
+      </div>
+    {{/if}}
 
-{{outlet}}
+    <div style="flex:1;height:100%;display:flex;flex-direction:column">
+      {{!-- navbar --}}
+      <div style="width:100%;height:2rem;background:lightgrey;display:flex;justify-content:space-between;align-items:center">
+        <button {{action "toggleSidebar"}}>Hamburger</button>
+        <div>Awesome Brand</div>
+      </div>
+
+      {{outlet}}
+    </div>
+</div>

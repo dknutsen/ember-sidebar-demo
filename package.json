@@ -1,8 +1,8 @@
 {
-  "name": "sidebar-test",
+  "name": "ember-sidebar-demo",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for sidebar-test goes here",
+  "description": "Basic proof-of-concept ember app with a sidebar",
   "repository": "",
   "license": "MIT",
   "author": "",
