@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'sidebar-test',
+    modulePrefix: 'ember-sidebar-demo',
     environment,
     rootURL: '/',
     locationType: 'auto',
